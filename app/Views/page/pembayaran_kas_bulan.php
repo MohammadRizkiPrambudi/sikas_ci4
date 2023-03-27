@@ -12,21 +12,35 @@
 <div class="section-body">
     <div class="row">
         <div class="col-md-6">
-            <div class="card card-primary">
-                <div class="card-body bg-primary text-white">
-                    <h5>Keterangan</h5>
-                    <p>
-                        <span>Bulan : <?= $detail_bulan_pembayaran['nama_bulan'] ?> - <?= $detail_bulan_pembayaran['tahun'] ?></span><br>
-                        <span>Kas: Rp. <?= number_format($detail_bulan_pembayaran['pembayaran_mingguan']); ?> Perminggu</span>
-                    </p>
+            <div class="card card-statistic-1 bg-info">
+                <div class="card-icon bg-white">
+                    <i class="fas fa-info text-info"></i>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4 class="text-white">Keterangan</h4>
+                    </div>
+                    <div class="card-body text-white">
+                        <span style="font-size: 16px;">
+                            Bulan : <?= $detail_bulan_pembayaran['nama_bulan'] ?> - <?= $detail_bulan_pembayaran['tahun'] ?>
+                            <p style="font-size: 12px;"> Kas: Rp. <?= number_format($detail_bulan_pembayaran['pembayaran_mingguan']); ?> Perminggu</p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="alert alert-success alert-has-icon">
-                <div class="alert-body">
-                    <div class="alert-title">Total Pemasukkan :</div>
-                    <p style="font-size: 17px;"> Rp. <?= number_format($total_kasperbulan['total_perbulan']); ?></p>
+            <div class="card card-statistic-1 bg-warning">
+                <div class="card-icon bg-white">
+                    <i class="fas fa-wallet text-warning"></i>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4 class="text-white">Total Pemasukan</h4>
+                    </div>
+                    <div class="card-body text-white">
+                        <p style="font-size: 17px;" class="font-weight-bold"> Rp. <?= number_format($total_kasperbulan['total_perbulan']); ?></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,7 +50,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <span data-toggle="modal" data-target="#masukkan_anggota" class="btn btn-primary"><i class="fas fa-plus mr-1"></i>Masukkan Anggota</span>
+                        <span data-toggle="modal" data-target="#masukkan_anggota" class="btn btn-primary"><i class="fas fa-plus-circle mr-1"></i>Masukkan Anggota</span>
                         <hr>
                         <table class="table" id="tabel">
                             <thead>

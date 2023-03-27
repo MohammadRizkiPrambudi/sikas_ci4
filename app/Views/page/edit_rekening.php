@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="/Rekening" class="btn btn-danger">Batal</a>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan</button>
+                        <a href="/Rekening" class="btn btn-danger"><i class="fas fa-times"></i> Batal</a>
                     </div>
                 </form>
             </div>

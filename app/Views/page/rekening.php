@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <a href="/Rekening/TambahRekening" class="btn btn-primary">Tambah Data</a>
+                        <a href="/Rekening/TambahRekening" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah Data</a>
                         <hr>
                         <table class="table" id="tabel">
                             <thead>

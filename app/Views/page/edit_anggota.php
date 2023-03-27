@@ -83,9 +83,9 @@
                         </div>
                         <input type="hidden" name="fotolama" value="<?= $anggota['foto_anggota']; ?>">
                     </div>
-                    <div class="card-footer text-right">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="/Anggota" class="btn btn-danger">Batal</a>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan</button>
+                        <a href="/Anggota" class="btn btn-danger"><i class="fas fa-times"></i> Batal</a>
                     </div>
                 </form>
             </div>

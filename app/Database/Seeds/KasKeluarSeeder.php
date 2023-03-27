@@ -10,7 +10,7 @@ class KasKeluarSeeder extends Seeder
     public function run()
     {
         $faker = \Faker\Factory::create('id_ID');
-        for ($i = 1; $i <= 500; $i++) {
+        for ($i = 1; $i <= 4; $i++) {
             $data = [
                 'kode_kas' => $faker->randomNumber(5, true),
                 'keterangan_kas' => 'Kas Keluar',

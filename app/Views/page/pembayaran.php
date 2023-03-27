@@ -16,7 +16,7 @@
             <div class="card">
                 <div class="card-body">
                     <?php if (session()->get('level_pengguna') == 'bendahara') : ?>
-                        <a href="/BulanPembayaran/TambahBulanPembayaran" class="btn btn-primary"><i class="fas fa-plus mr-1"></i>Tambah Bulan</a>
+                        <a href="/BulanPembayaran/TambahBulanPembayaran" class="btn btn-primary"><i class="fas fa-plus-circle mr-1"></i> Tambah Bulan</a>
                         <hr>
                         <div class="alert alert-warning alert-has-icon">
                             <div class="alert-icon"><i class="fas fa-exclamation"></i></div>

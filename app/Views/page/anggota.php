@@ -1,7 +1,7 @@
 <?php $this->extend('template/index') ?>
 <?php $this->Section('konten') ?>
 <div class="section-header">
-    <h1>Anggota</h1>
+    <h1>Data Anggota</h1>
     <div class="section-header-breadcrumb">
         <div class="breadcrumb-item active"><a href="#">Master Data</a></div>
         <div class="breadcrumb-item">Daftar Anggota</div>
@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <a href="/Anggota/TambahAnggota" class="btn btn-primary">Tambah Data</a>
+                        <a href="/Anggota/TambahAnggota" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah Data</a>
                         <hr>
                         <table class="table" id="tabel">
                             <thead>

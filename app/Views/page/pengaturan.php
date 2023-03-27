@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Nama Organisasi</label>
+                            <label>Alamat Organisasi</label>
                             <textarea class="form-control <?= ($validasi->hasError('alamat')) ? 'is-invalid' : ''; ?>" name="alamat" style="height: 80px;"><?= old('alamat', $config['alamat_organisasi']); ?></textarea>
                             <div class="invalid-feedback">
                                 <?= $validasi->getError('alamat'); ?>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-primary"> <i class="fas fa-save"></i> Simpan</button>
                     </div>
                 </form>
             </div>

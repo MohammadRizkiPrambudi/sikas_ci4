@@ -221,19 +221,24 @@ for ($i = $mulai; $i < $mulai + 12; $i++) {
     $namabulan[] = bulan($i);
 }
 
-foreach ($chartkasmasuk as $km) {
-    $kasmasuk[] = $km['kasmasuk'];
+if (count($chartkasmasuk) > 0) {
+    foreach ($chartkasmasuk as $km) {
+        $kasmasuk[] = $km['kasmasuk'];
+    }
 }
 
 
-foreach ($chartkaskeluar as $kk) {
-    $kaskeluar[] = $kk['kaskeluar'];
+if (count($chartkaskeluar) > 0) {
+    foreach ($chartkaskeluar as $kk) {
+        $kaskeluar[] = $kk['kaskeluar'];
+    }
 }
 
-foreach ($chartpembayarankas as $c) {
-    $jumlahpembayaran[] = $c['jumlah_pembayaran'];
+if (count($chartpembayarankas) > 0) {
+    foreach ($chartpembayarankas as $c) {
+        $jumlahpembayaran[] = $c['jumlah_pembayaran'];
+    }
 }
-
 ?>
 <script src="/back-end/node_modules/chart.js/dist/Chart.min.js"></script>
 <script>

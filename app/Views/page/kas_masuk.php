@@ -34,7 +34,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <button type="button" data-toggle="modal" data-target="#TambahKasMasuk" class="btn btn-primary">Tambah Data</button>
+                        <button type="button" data-toggle="modal" data-target="#TambahKasMasuk" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah Data</button>
                         <hr>
                         <table class="table nowrap" id="tabel-kasmasuk" style="width:100%">
                             <thead>

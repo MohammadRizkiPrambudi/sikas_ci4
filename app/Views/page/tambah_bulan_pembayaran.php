@@ -17,7 +17,7 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <div class="form-group">
-                                    <input type="text" class="form-control <?= ($validasi->hasError('kode')) ? 'is-invalid' : ''; ?>" value="<?= old('kode', $kode); ?>" name="kode" autocomplete="off" readonly>
+                                    <input type="hidden" class="form-control <?= ($validasi->hasError('kode')) ? 'is-invalid' : ''; ?>" value="<?= old('kode', $kode); ?>" name="kode" autocomplete="off" readonly>
                                     <div class="invalid-feedback">
                                         <?= $validasi->getError('kode'); ?>
                                     </div>
@@ -36,7 +36,7 @@
                                         <?php endfor; ?>
                                     </select>
                                     <div class="invalid-feedback">
-                                        <?= $validasi->getError('mapel'); ?>
+                                        <?= $validasi->getError('nama_bulan'); ?>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +65,8 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="/BulanPembayaran" class="btn btn-danger">Batal</a>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan</button>
+                        <a href="/Pembayaran" class="btn btn-danger"><i class="fas fa-times"></i> Batal</a>
                     </div>
                 </form>
             </div>
